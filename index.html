@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+		<nav>
+            <h1>ToDo</h1>
+			<ul>
+				<li>
+                    <button class="add-todo" id="add-todo">
+                        New TODO +
+                    </button>
+                </li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section class="todos">
+	
+		<ul class="todos-list" id="todo-list">
+            <li class="todo-element">
+                <div class="todo-left">
+                    <div class="todo-check">
+                        <input type="checkbox" class="input-checkbox" name="" id="">
+                    </div>
+                    <div class="todo-text">
+                        <input type="text" value="przykład" class="input-todo">
+                    </div>
+                </div>
+                
+                <div class="todo-actions">
+                    <button class="material-icons action-item">
+                        edit
+                    </button>
+                    <button class="material-icons action-item">
+                        delete
+                    </button>
+                </div>
+            </li>
+        </ul>
+
+		
+	</section>
+
+	<footer>
+		<p>Copyright 2023 Maciej Szwast</p>
+	</footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

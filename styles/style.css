@@ -1,0 +1,187 @@
+:root {
+    /* bg */
+    --dark-bg: #292929;
+    --h-color: #222222;
+
+    /* text */
+    --text-light: #f2f2f2;
+    --h-text-color: #ffffff;
+    
+    /* btn's */
+    --btn-color: #666666;
+    --accent-color: #ffcc00;
+    --accent-color-hover: #fad028;
+    
+
+    /* footer */
+    --footer-color: #333333;
+    --footer-text: #cccccc;
+
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li { 
+    list-style: none;
+}
+
+  /* Ustawienia domyślne dla tekstu */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Ustawienia dla sekcji nagłówka */
+header {
+    color: var(--h-text-color);
+}
+
+  /* Ustawienia dla menu nawigacji */
+nav {
+    background: var(--h-color);
+    padding: 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  /* Ustawienia dla linków nawigacji */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+  /* Ustawienia dla sekcji treści */
+main {
+    padding: 20px;
+}
+
+  /* Ustawienia dla obrazków */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+footer {
+    margin-top: auto;
+    background: var(--footer-color);
+    color: var(--footer-text);
+    padding: 1rem;
+    text-align: center;
+}
+
+.add-todo {
+    background: var(--accent-color);
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--btn-color);
+    cursor: pointer;
+}
+
+.add-todo:hover {
+    background: var(--accent-color-hover);
+    
+}
+
+.todos-list {
+    padding: 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.todo-element{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+.todo-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.todo-actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.todo-text {
+    color: var(--text-light);
+}
+
+.action-item{
+    outline: none;
+    background: transparent;
+    color: var(--text-light);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.action-item:hover{
+    background: var(--footer-color);
+}
+
+.todo-text{
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.input-todo{
+    background: transparent;
+    color: var(--text-light);
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+    width: 100%;
+    padding: .5rem;
+    
+}
+
+.input-checkbox{
+    margin: 0 .5rem;
+}
+
+.input-todo:not(:disabled){
+    border-bottom: 1px solid white;
+}
+
+.todo-element.complete .input-todo {
+    text-decoration: line-through;
+}
