@@ -1,5 +1,4 @@
 # ToDo-app
 Todo app with JS
 
-![image](https://user-images.githubusercontent.com/60657751/235960626-b763312b-c370-464c-9fe4-376c693155c3.png)
-
+![image](https://user-images.githubusercontent.com/60657751/235960698-34ccfac6-95fd-4d93-8f03-6b2163eaae0c.png)
