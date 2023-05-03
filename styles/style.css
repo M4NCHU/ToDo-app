@@ -40,6 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 }
 
 /* Ustawienia dla sekcji nagłówka */
@@ -110,6 +111,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -170,7 +172,7 @@ footer {
     border: none;
     font-size: 0.9rem;
     width: 100%;
-    padding: .5rem;
+    
     
 }
 
@@ -184,4 +186,37 @@ footer {
 
 .todo-element.complete .input-todo {
     text-decoration: line-through;
+}
+
+textarea {
+    padding-top: 1rem;
+    scrollbar-face-color: #ff8c00;
+    scrollbar-track-color: #fff8dc;
+    scrollbar-arrow-color: #ffffff;
+    scrollbar-highlight-color: #fff8dc;
+    scrollbar-shadow-color: #d2691e;
+    scrollbar-3dlight-color: #ffebcd;
+    scrollbar-darkshadow-color: #8b0000;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
+
+@media only screen and (max-width: 872px) {
+    nav, .todos-list{
+        padding: 1rem 2rem;
+    }
+    
 }
